@@ -1,0 +1,116 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background:  url("bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+body::before{
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.199);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#todoapp::before{
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.301);
+    position: absolute;
+    top: 110px;
+    height: 70%;
+    width: 45%;
+    z-index: -1;
+    opacity: 0.89;
+    box-shadow: 15px -15px 15px rgba(0, 0, 0, 0.842);
+}
+#todoapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+}
+#addTask{
+    display: flex;
+    flex-direction: column;
+    margin-left:  480px;
+    margin-top: 20px;
+}
+
+#todoapp h1{
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    color: bisque;
+    margin-top: 10px;
+}
+#typetask{
+    height:30px;
+    width:35%;
+    background-color: rgba(0, 0, 0, 0.63);
+    font-size: 0.8rem;
+    font-family: Montserrat;
+    color: crimson;
+    padding:10px 10px;
+    margin:5px 4px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+#typetask:hover{
+    height:35px;
+    width:40%;
+    font-size: 0.9rem;
+}
+#btn1:hover{
+    height:35px;
+    width:160px;
+    font-size: 1.3rem;
+}
+#btn2:hover{
+    height:35px;
+    width:120px;
+    font-size: 1.3rem;
+}
+#btn1{
+    height: 30px;
+    width: 130px;
+    background-color: rgba(220, 20, 60, 0.884);
+    font-size: 1.2rem;
+    font-family: Montsearrat;
+    color: white;
+    border: 1px solid crimson;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding:5px 5px;
+}
+span{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(220, 20, 60, 0.884);
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid crimson;
+    border-radius: 50%;
+    position: absolute;
+    left: 900px;
+    padding-left: 5.5px;
+    padding-top: 2px;
+}
+ul li {
+    padding: 5px 5px;
+    margin: 3px 3px;
+    list-style: none;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    color:white;
+}
